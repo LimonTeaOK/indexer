@@ -40,7 +40,7 @@ export function createPoolSnapshot(
     reserve0: entity.reserve0,
     reserve1: entity.reserve1,
     totalLPTokenSupply: entity.totalLPTokenSupply,
-    totalLiquidityUSD: entity.totalLiquidityUSD,
+    totalLiquidityUSD: entity.totalLiquidityUSD < 0n ? 0n : entity.totalLiquidityUSD,
     totalVolume0: entity.totalVolume0,
     totalVolume1: entity.totalVolume1,
     totalVolumeUSD: entity.totalVolumeUSD,
